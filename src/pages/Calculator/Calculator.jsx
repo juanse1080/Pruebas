@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import ButtonGroup from "@material-ui/core/ButtonGroup";
-import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
@@ -16,8 +14,6 @@ const Calculator = () => {
     symbol: false,
     equal: false,
   });
-
-  /// ["200 + 300", "100 + 4"]
 
   const classes = useStyles();
 
@@ -36,7 +32,12 @@ const Calculator = () => {
     else {
       if (/^\d*$/.test(value))
         setEnabled((_enabled) => ({ ..._enabled, symbol: true, equal: true }));
-      else setEnabled((_enabled) => ({ ..._enabled, symbol: false, equal: false }));
+      else
+        setEnabled((_enabled) => ({
+          ..._enabled,
+          symbol: false,
+          equal: false,
+        }));
       setCurrent((_current) =>
         current === "0" ? value : `${_current}${value}`
       );
@@ -45,10 +46,7 @@ const Calculator = () => {
 
   return (
     <div className={classes.root}>
-      <Paper
-        className={classes.paper}
-        elevation={3}
-      >
+      <Paper className={classes.paper} elevation={3}>
         <Grid container>
           <Grid item xs={12} className={classes.container}>
             {state.map((item) => (
