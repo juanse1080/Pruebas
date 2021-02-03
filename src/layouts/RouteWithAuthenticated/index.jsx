@@ -9,7 +9,7 @@ const Structure = ({ navbar, children }) => {
   return (
     <Box>
       {navbar}
-      <Container maxWidth="sm" style={{ height: "100vh" }}>
+      <Container maxWidth="lg" style={{ height: "100vh" }}>
         {children}
       </Container>
     </Box>
