@@ -1,23 +1,15 @@
 import React from "react";
 
-import Box from "@material-ui/core/Box";
-import Container from "@material-ui/core/Container";
+//import styles
 
-import PropTypes from "prop-types";
+import AppBar from "../../components/AppBar";
 
-const Structure = ({ navbar, children }) => {
-  return (
-    <Box>
-      {navbar}
-      <Container maxWidth="lg" style={{ height: "100vh" }}>
-        {children}
-      </Container>
-    </Box>
-  );
-};
+const Structure = ({ children }) => {
 
-Structure.propTypes = {
-  navbar: PropTypes.element,
+  return<>
+    <AppBar />
+    {children}
+    </>
 };
 
 export default Structure;

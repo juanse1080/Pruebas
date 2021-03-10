@@ -7,13 +7,13 @@ import theme from "./theme";
 
 import AppBar from "./components/AppBar";
 import RouteWithAuthenticated from "./layouts/RouteWithAuthenticated";
-import Calculator from "./pages/Calculator/Calculator";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <RouteWithAuthenticated navbar={<AppBar />}>
-        <Calculator />
+      <RouteWithAuthenticated>
+        <Home />
       </RouteWithAuthenticated>
     </ThemeProvider>
   );

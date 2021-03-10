@@ -14,9 +14,9 @@ const custom = {
     contrastText: white,
   },
   secondary: {
-    light: '#7eaeff',
-    main: '#4285f4',
-    dark: '#3968b6',
+    light: '#ee5b66',
+    main: '#ed4956',
+    dark: '#d5414d',
     contrastText: '#fff',
   },
   success: {
