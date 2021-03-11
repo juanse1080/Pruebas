@@ -5,7 +5,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 
 
-import AppBar from "./components/AppBar";
 import RouteWithAuthenticated from "./layouts/RouteWithAuthenticated";
 import Home from "./pages/Home";
 

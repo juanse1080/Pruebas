@@ -26,23 +26,26 @@ const Home = () => {
               nosotros te la llevamos donde la necesites, como la necesites y a
               la hora que necesites.
             </Typography>
-            <Button color='secondary' variant='contained' classes={{root:classes.button}}>
-                Empieza
+            <Button
+              color="secondary"
+              variant="contained"
+              classes={{ root: classes.button }}
+            >
+              Empieza
             </Button>
           </Grid>
           <Hidden smDown>
-          <Grid item xs={6}>
-            <img
-              src="img/pagos.svg"
-              alt="Metodos de pago"
-              title="Metodos de pago"
-            />
-            <Typography variant="body1" align="center">
-              contamos con muchos metodos de pago
-            </Typography>
-          </Grid>
+            <Grid item xs={6}>
+              <img
+                src="img/pagos.svg"
+                alt="Metodos de pago"
+                title="Metodos de pago"
+              />
+              <Typography variant="body1" align="center">
+                contamos con muchos metodos de pago
+              </Typography>
+            </Grid>
           </Hidden>
-          
         </Grid>
       </Container>
     </div>
